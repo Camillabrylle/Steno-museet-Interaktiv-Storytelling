@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ff0000;
+
+  }
+  
+  .figure {
+    width: 200px;
+    height: 270px;
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .statement {
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    cursor: grab;
+    font-size: 18px;
+  }
+
+  
+  .figure {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .feedback {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s;
+  }
+  

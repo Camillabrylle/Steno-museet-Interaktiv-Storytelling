@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steno Museet Interaktiv Storytelling</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drag & Drop Spil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Steno Museet Interactive Storytelling</h1>
-    <p>This is the starting point for your project.</p>
+
+  
+  <div id="woman" class="figure" ondragover="allowDrop(event)" ondrop="drop(event, 'woman')">
+    <img src="/img/kvinde - ikon.png" alt="Kvinde"  width="180px">
+    <div class="feedback" id="feedback-woman"></div>
+  </div>
+
+  <div id="statement1" class="statement" draggable="true" ondragstart="drag(event)" data-answer="woman">
+    "Bruger oftest makeup"
+  </div>
+
+  <div id="statement1" class="statement" draggable="true" ondragstart="drag(event)" data-answer="woman">
+    "har langt hår"
+  </div>
+
+  <div id="statement2" class="statement" draggable="true" ondragstart="drag(event)" data-answer="man">
+    "Spiller tit fodbold"
+  </div>
+
+  <div id="statement2" class="statement" draggable="true" ondragstart="drag(event)" data-answer="man">
+    "har kort hår"
+  </div>
+
+  <div id="man" class="figure" ondragover="allowDrop(event)" ondrop="drop(event, 'man')">
+    <img src="/img/mand - ikon.png" alt="Mand" width="180px">
+    <div class="feedback" id="feedback-man"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
